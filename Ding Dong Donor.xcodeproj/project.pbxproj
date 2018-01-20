@@ -29,6 +29,7 @@
 		D0277BAA201326F700997053 /* DonationPageTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0277BA9201326F700997053 /* DonationPageTableVC.swift */; };
 		D0277BAC2013AFAA00997053 /* DonationPageScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0277BAB2013AFAA00997053 /* DonationPageScannerVC.swift */; };
 		D0277BAE2013B9B700997053 /* DonationPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0277BAD2013B9B700997053 /* DonationPageVC.swift */; };
+		D0277BB02013D79D00997053 /* CreateBarcodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0277BAF2013D79D00997053 /* CreateBarcodeService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		D0277BA9201326F700997053 /* DonationPageTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationPageTableVC.swift; sourceTree = "<group>"; };
 		D0277BAB2013AFAA00997053 /* DonationPageScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationPageScannerVC.swift; sourceTree = "<group>"; };
 		D0277BAD2013B9B700997053 /* DonationPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationPageVC.swift; sourceTree = "<group>"; };
+		D0277BAF2013D79D00997053 /* CreateBarcodeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBarcodeService.swift; sourceTree = "<group>"; };
 		F1D9F84BE6374DD8A25336DA /* Pods_Ding_Dong_DonorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ding_Dong_DonorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -220,6 +222,7 @@
 				D0108AD5201307C1003F1513 /* CreatePageService.swift */,
 				D0108AD720130A49003F1513 /* StorageService.swift */,
 				D0108ADF20131BFF003F1513 /* CreatorService.swift */,
+				D0277BAF2013D79D00997053 /* CreateBarcodeService.swift */,
 				D0277BA420131DCD00997053 /* PhotoService.swift */,
 			);
 			path = Services;
@@ -533,6 +536,7 @@
 			files = (
 				D0277BA520131DCD00997053 /* PhotoService.swift in Sources */,
 				D0108AD6201307C1003F1513 /* CreatePageService.swift in Sources */,
+				D0277BB02013D79D00997053 /* CreateBarcodeService.swift in Sources */,
 				D0277BAE2013B9B700997053 /* DonationPageVC.swift in Sources */,
 				D0108AD820130A49003F1513 /* StorageService.swift in Sources */,
 				D0108ADE201314B0003F1513 /* StorageReference+Page.swift in Sources */,

@@ -33,8 +33,7 @@ class DonationPagesTableVC: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDonationPage" {
             let donationPage = segue.destination as! DonationPageVC
-            let row = (sender as! IndexPath).row
-            let page = pages[row]
+            let page = pages[(tableView.indexPathForSelectedRow?.row)!]
             donationPage.pageRef = Constants.PagePointer.page(link: page.key!)
         }
     }

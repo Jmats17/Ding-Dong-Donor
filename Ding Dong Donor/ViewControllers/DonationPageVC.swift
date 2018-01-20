@@ -18,6 +18,7 @@ class DonationPageVC : UIViewController {
     @IBOutlet weak var barcodeImage : UIImageView!
     var pageRef : DatabaseReference?
     var page : DonationPage?
+    var barcodeService = CreateBarcodeService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,13 +28,19 @@ class DonationPageVC : UIViewController {
                 self.nameLabel.text = page?.name
                 self.creatorLabel.text = page?.creator
                 let imageURL = URL(string: (page?.imageURL)!)
-                KingfisherManager.shared.retrieveImage(with: imageURL!, options: nil, progressBlock: nil, completionHandler: { image, error, cacheType, imageURL in
-                    let barcodeImage = QRCode.generateImage("\(pageRef)", avatarImage: image, avatarScale: 0.3)
-                    self.barcodeImage.image = barcodeImage
-                })
+                self.barcodeService.createBarcode(imageUrl: imageURL!, ref: pageRef){ (barcodeImg) in
+                    self.barcodeImage.image = barcodeImg
+                }
                 
             }
         }
+        
+        
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
         
     }
 }
