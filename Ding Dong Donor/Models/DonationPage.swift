@@ -15,9 +15,9 @@ class DonationPage  {
     var name : String?
     var creator : String?
     var currentAmtRaised : Int?
-    var qrCode : CGImage?
+    var qrCode : UIImage?
     
-    init(name : String, creator : String, currentAmtRaised : Int, qrCode : CGImage) {
+    init(name : String, creator : String, currentAmtRaised : Int, qrCode : UIImage) {
         self.name = name
         self.creator = creator
         self.currentAmtRaised = currentAmtRaised

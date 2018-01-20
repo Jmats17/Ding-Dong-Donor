@@ -18,6 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Csp-tq-doz">
+                                <rect key="frame" x="172" y="239" width="32" height="30"/>
+                                <state key="normal" title="Add!"/>
+                                <connections>
+                                    <action selector="addImage" destination="DF6-SS-Qgw" eventType="touchUpInside" id="bgu-79-ha8"/>
+                                </connections>
+                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5k4-z1-rrx">
                                 <rect key="frame" x="84" y="105" width="206" height="30"/>
                                 <nil key="textColor"/>
@@ -51,11 +58,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W4D-g9-mWk">
                                 <rect key="frame" x="68" y="277" width="240" height="179"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Csp-tq-doz">
-                                <rect key="frame" x="172" y="239" width="32" height="30"/>
-                                <state key="normal" title="Add!"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4C-xq-JbR">
+                                <rect key="frame" x="168" y="617" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done"/>
                                 <connections>
-                                    <action selector="addImage" destination="DF6-SS-Qgw" eventType="touchUpInside" id="bgu-79-ha8"/>
+                                    <action selector="createPage" destination="DF6-SS-Qgw" eventType="touchUpInside" id="jhf-qZ-Z3G"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -86,6 +94,7 @@
                         <outlet property="barcodeImage" destination="W4D-g9-mWk" id="2HP-Hi-x87"/>
                         <outlet property="creatorLabel" destination="ohz-8v-4T2" id="epe-cv-rAE"/>
                         <outlet property="nameLabel" destination="5k4-z1-rrx" id="8xb-4s-ljI"/>
+                        <outlet property="submitButton" destination="f4C-xq-JbR" id="AXR-dC-9Nv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="61H-0O-307" userLabel="First Responder" sceneMemberID="firstResponder"/>

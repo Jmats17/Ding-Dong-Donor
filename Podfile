@@ -7,6 +7,7 @@ target 'Ding Dong Donor' do
   pod 'Firebase/Core'
 pod 'Firebase/Database'
 pod "EFQRCode", '~> 4.2.1'
+pod 'Firebase/Storage'
 pod 'ImagePicker'
 
   # Pods for Ding Dong Donor

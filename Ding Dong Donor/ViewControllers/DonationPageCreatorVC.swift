@@ -16,6 +16,7 @@ class DonationPageCreatorVC : UIViewController, ImagePickerDelegate {
     @IBOutlet weak var nameLabel : UITextField!
     @IBOutlet weak var creatorLabel : UITextField!
     @IBOutlet weak var barcodeImage : UIImageView!
+    @IBOutlet weak var submitButton : UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +33,14 @@ class DonationPageCreatorVC : UIViewController, ImagePickerDelegate {
         imagePicker.delegate = self
         imagePicker.imageLimit = 1
         present(imagePicker, animated: true, completion: nil)
+    }
+    
+    @IBAction func createPage() {
+        guard let name = nameLabel.text else { return submitButton.isEnabled = false}
+        guard let creator = creatorLabel.text else {return submitButton.isEnabled = false}
+        guard let barcodePic = barcodeImage.image else {return submitButton.isEnabled = false}
+        CreatePageService.create(for: barcodePic)
+        //let donationPage = DonationPage(name: name, creator: creator, currentAmtRaised: 0, qrCode: barcodePic)
     }
     
     func wrapperDidPress(_ imagePicker: ImagePickerController, images: [UIImage]) {
