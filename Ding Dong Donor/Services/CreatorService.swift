@@ -12,7 +12,7 @@ import FirebaseDatabase
 struct CreatorService {
     
     static func pages(for user: String, completion: @escaping ([DonationPage]) -> Void) {
-        let ref = Database.database().reference().child("pages").child(Constants.DeviceUID.deviceID)
+        let ref = Constants.PagePointer.pages()
         
         ref.observeSingleEvent(of: .value, with: { (snapshot) in
             guard let snapshot = snapshot.children.allObjects as? [DataSnapshot] else {
@@ -21,6 +21,17 @@ struct CreatorService {
             
             let posts = snapshot.reversed().flatMap(DonationPage.init)
             completion(posts)
+        })
+    }
+    static func showPage(for ref: DatabaseReference, completion: @escaping (DonationPage?) -> Void) {
+        let ref = ref
+        
+        ref.observeSingleEvent(of: .value, with: { (snapshot) in
+            guard let page = DonationPage(snapshot: snapshot) else {
+                return completion(nil)
+            }
+            
+            completion(page)
         })
     }
     

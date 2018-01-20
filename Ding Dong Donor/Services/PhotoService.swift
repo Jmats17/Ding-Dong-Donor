@@ -8,7 +8,7 @@
 
 import UIKit
 import ImagePicker
-import EFQRCode
+//import EFQRCode
 
 class PhotoService: NSObject {
     
@@ -34,12 +34,12 @@ extension PhotoService: ImagePickerDelegate {
     }
     
     func doneButtonDidPress(_ imagePicker: ImagePickerController, images: [UIImage]) {
-        let imageData = UIImagePNGRepresentation(images[0])
-        let barcode = EFQRCode.generate(
-            content: "https://www.youtube.com/watch?v=s-U1J5CCiY4",
-            watermark: UIImage(data: imageData!)?.toCGImage())
-        let barcodeImage = UIImage(cgImage: barcode!)
-        completionHandler?(barcodeImage)
+//        let imageData = UIImagePNGRepresentation(images[0])
+//        let barcode = EFQRCode.generate(
+//            content: "https://www.youtube.com/watch?v=s-U1J5CCiY4",
+//            watermark: UIImage(data: imageData!)?.toCGImage())
+//        let barcodeImage = UIImage(cgImage: barcode!)
+        completionHandler?(images[0])
         imagePicker.dismiss(animated: true)
     }
     func cancelButtonDidPress(_ imagePicker: ImagePickerController) {

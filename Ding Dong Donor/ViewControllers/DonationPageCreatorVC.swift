@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import ImagePicker
 import EFQRCode
+import SwiftQRCode
 
 class DonationPageCreatorVC : UIViewController {
     
@@ -23,6 +24,7 @@ class DonationPageCreatorVC : UIViewController {
         super.viewDidLoad()
         photoService.completionHandler = { img in
             self.barcodeImage.image = img
+            
         }
     }
     

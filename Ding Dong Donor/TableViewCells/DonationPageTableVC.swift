@@ -14,4 +14,7 @@ class DonationPageTableVC : UITableViewCell {
     @IBOutlet weak var creatorLabel : UILabel!
     @IBOutlet weak var moneyRaised : UILabel!
 
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
 }

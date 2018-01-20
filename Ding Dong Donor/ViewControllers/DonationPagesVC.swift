@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class DonationPagesVC: UITableViewController {
+class DonationPagesTableVC: UITableViewController {
     
     var pages = [DonationPage]()
     
@@ -30,11 +30,25 @@ class DonationPagesVC: UITableViewController {
         return pages.count
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDonationPage" {
+            let donationPage = segue.destination as! DonationPageVC
+            let row = (sender as! IndexPath).row
+            let page = pages[row]
+            donationPage.pageRef = Constants.PagePointer.page(link: page.key!)
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "showDonationPage", sender: nil)
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DonationPageCell", for: indexPath) as! DonationPageTableVC
         let page = pages[indexPath.row]
         cell.creatorLabel.text = page.creator
         cell.pageLabel.text = page.name
+        
         cell.moneyRaised.text = "$\(page.currentAmtRaised)"
         return cell
     }

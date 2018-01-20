@@ -1,4 +1,5 @@
 PODS:
+  - BarcodeScanner (3.0.2)
   - EFQRCode (4.2.1)
   - Firebase/Core (4.8.0):
     - FirebaseAnalytics (= 4.0.5)
@@ -31,21 +32,27 @@ PODS:
     - GoogleToolboxForMac/Defines (= 2.1.3)
   - GTMSessionFetcher/Core (1.1.12)
   - ImagePicker (3.0.0)
+  - Kingfisher (4.6.1)
   - leveldb-library (1.20)
   - nanopb (0.3.8):
     - nanopb/decode (= 0.3.8)
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - SwiftQRCode (3.0.2)
 
 DEPENDENCIES:
+  - BarcodeScanner
   - EFQRCode (~> 4.2.1)
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
   - ImagePicker
+  - Kingfisher (~> 4.0)
+  - SwiftQRCode
 
 SPEC CHECKSUMS:
+  BarcodeScanner: 0567807f92007298a50589927d7b5c24c7cf3610
   EFQRCode: f3fd67049faa07adb575495c05d72a34e407a940
   Firebase: 710decbbc6d9d48530e9a5dba3209740c3532e05
   FirebaseAnalytics: 5b02a63ead2c3f0259cfc7f15e053e440587ecf8
@@ -56,9 +63,11 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   GTMSessionFetcher: ebaa1f79a5366922c1735f1566901f50beba23b7
   ImagePicker: 973953c25960fe04729a7082a56194321c6762d2
+  Kingfisher: 1f9157d9c02b380cbd0b7cc890161195164eb634
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  SwiftQRCode: 280589699d84195c2c573011aa52f2c015c31c34
 
-PODFILE CHECKSUM: cf3d5a2e2b706e28ed7f17b7be9faa99e4ad156a
+PODFILE CHECKSUM: d7b26689e4c9e5b49e84bba978642651871f5a0b
 
 COCOAPODS: 1.2.0

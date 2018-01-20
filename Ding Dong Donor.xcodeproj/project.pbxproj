@@ -27,6 +27,8 @@
 		D0277BA520131DCD00997053 /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0277BA420131DCD00997053 /* PhotoService.swift */; };
 		D0277BA72013263000997053 /* DonationPagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0277BA62013263000997053 /* DonationPagesVC.swift */; };
 		D0277BAA201326F700997053 /* DonationPageTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0277BA9201326F700997053 /* DonationPageTableVC.swift */; };
+		D0277BAC2013AFAA00997053 /* DonationPageScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0277BAB2013AFAA00997053 /* DonationPageScannerVC.swift */; };
+		D0277BAE2013B9B700997053 /* DonationPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0277BAD2013B9B700997053 /* DonationPageVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,8 @@
 		D0277BA420131DCD00997053 /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
 		D0277BA62013263000997053 /* DonationPagesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationPagesVC.swift; sourceTree = "<group>"; };
 		D0277BA9201326F700997053 /* DonationPageTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationPageTableVC.swift; sourceTree = "<group>"; };
+		D0277BAB2013AFAA00997053 /* DonationPageScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationPageScannerVC.swift; sourceTree = "<group>"; };
+		D0277BAD2013B9B700997053 /* DonationPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationPageVC.swift; sourceTree = "<group>"; };
 		F1D9F84BE6374DD8A25336DA /* Pods_Ding_Dong_DonorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ding_Dong_DonorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -204,6 +208,8 @@
 			children = (
 				D0108AD02012FA06003F1513 /* DonationPageCreatorVC.swift */,
 				D0277BA62013263000997053 /* DonationPagesVC.swift */,
+				D0277BAB2013AFAA00997053 /* DonationPageScannerVC.swift */,
+				D0277BAD2013B9B700997053 /* DonationPageVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -527,6 +533,7 @@
 			files = (
 				D0277BA520131DCD00997053 /* PhotoService.swift in Sources */,
 				D0108AD6201307C1003F1513 /* CreatePageService.swift in Sources */,
+				D0277BAE2013B9B700997053 /* DonationPageVC.swift in Sources */,
 				D0108AD820130A49003F1513 /* StorageService.swift in Sources */,
 				D0108ADE201314B0003F1513 /* StorageReference+Page.swift in Sources */,
 				D0108AD12012FA06003F1513 /* DonationPageCreatorVC.swift in Sources */,
@@ -535,6 +542,7 @@
 				D0108ADB20130F28003F1513 /* Constants.swift in Sources */,
 				D0108A9D2012F10D003F1513 /* AppDelegate.swift in Sources */,
 				D0277BAA201326F700997053 /* DonationPageTableVC.swift in Sources */,
+				D0277BAC2013AFAA00997053 /* DonationPageScannerVC.swift in Sources */,
 				D0108AE020131BFF003F1513 /* CreatorService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

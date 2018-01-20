@@ -31,6 +31,7 @@ struct CreatePageService {
         let dict = page.dictValue
         
         let postRef = Database.database().reference().child("pages").child(user).childByAutoId()
+
         postRef.updateChildValues(dict)
         
     }

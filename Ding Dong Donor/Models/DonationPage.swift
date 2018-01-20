@@ -46,8 +46,6 @@ class DonationPage  {
             let createdAgo = dict["created_at"] as? TimeInterval,
             let creator = dict["creator"] as? String,
             let currentAmtRaised = dict["current_amt_raised"] as? Int
-
-
             else { return nil }
         
         self.key = snapshot.key

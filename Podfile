@@ -9,6 +9,9 @@ pod 'Firebase/Database'
 pod "EFQRCode", '~> 4.2.1'
 pod 'Firebase/Storage'
 pod 'ImagePicker'
+pod 'SwiftQRCode'
+pod 'BarcodeScanner'
+  pod 'Kingfisher', '~> 4.0'
 
   # Pods for Ding Dong Donor
 
