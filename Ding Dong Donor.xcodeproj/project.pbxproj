@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02F191D14ACCC15C04F839B3 /* Pods_Ding_Dong_DonorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2849177F361CDBF43B84F69A /* Pods_Ding_Dong_DonorTests.framework */; };
+		53949CDD8898F27618F4EF1C /* Pods_Ding_Dong_Donor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC20D31CA0157CC737761A67 /* Pods_Ding_Dong_Donor.framework */; };
+		6D0AD1ED9240CD4C214179E7 /* Pods_Ding_Dong_DonorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D9F84BE6374DD8A25336DA /* Pods_Ding_Dong_DonorUITests.framework */; };
 		D0108A9D2012F10D003F1513 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0108A9C2012F10D003F1513 /* AppDelegate.swift */; };
 		D0108A9F2012F10D003F1513 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0108A9E2012F10D003F1513 /* ViewController.swift */; };
 		D0108AA22012F10D003F1513 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0108AA02012F10D003F1513 /* Main.storyboard */; };
@@ -14,6 +17,7 @@
 		D0108AA72012F10D003F1513 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0108AA52012F10D003F1513 /* LaunchScreen.storyboard */; };
 		D0108AB22012F10D003F1513 /* Ding_Dong_DonorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0108AB12012F10D003F1513 /* Ding_Dong_DonorTests.swift */; };
 		D0108ABD2012F10E003F1513 /* Ding_Dong_DonorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0108ABC2012F10E003F1513 /* Ding_Dong_DonorUITests.swift */; };
+		D0108ACD2012F270003F1513 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0108ACC2012F270003F1513 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11D419768A2719A9638CDBCC /* Pods-Ding Dong Donor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ding Dong Donor.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ding Dong Donor/Pods-Ding Dong Donor.release.xcconfig"; sourceTree = "<group>"; };
+		2849177F361CDBF43B84F69A /* Pods_Ding_Dong_DonorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ding_Dong_DonorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F57159102CB9CAB40C2FB84 /* Pods-Ding Dong DonorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ding Dong DonorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ding Dong DonorUITests/Pods-Ding Dong DonorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4EAAE7D34A5B53AF8B06B29A /* Pods-Ding Dong DonorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ding Dong DonorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ding Dong DonorTests/Pods-Ding Dong DonorTests.release.xcconfig"; sourceTree = "<group>"; };
+		63E166F031B5BC4C247F1CA6 /* Pods-Ding Dong DonorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ding Dong DonorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ding Dong DonorUITests/Pods-Ding Dong DonorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		681E746098E871545D923B05 /* Pods-Ding Dong Donor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ding Dong Donor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ding Dong Donor/Pods-Ding Dong Donor.debug.xcconfig"; sourceTree = "<group>"; };
+		78F0CD193DB1B149FA58B64C /* Pods-Ding Dong DonorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ding Dong DonorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ding Dong DonorTests/Pods-Ding Dong DonorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC20D31CA0157CC737761A67 /* Pods_Ding_Dong_Donor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ding_Dong_Donor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0108A992012F10D003F1513 /* Ding Dong Donor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ding Dong Donor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0108A9C2012F10D003F1513 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0108A9E2012F10D003F1513 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +59,8 @@
 		D0108AB82012F10E003F1513 /* Ding Dong DonorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ding Dong DonorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0108ABC2012F10E003F1513 /* Ding_Dong_DonorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ding_Dong_DonorUITests.swift; sourceTree = "<group>"; };
 		D0108ABE2012F10E003F1513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0108ACC2012F270003F1513 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F1D9F84BE6374DD8A25336DA /* Pods_Ding_Dong_DonorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ding_Dong_DonorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53949CDD8898F27618F4EF1C /* Pods_Ding_Dong_Donor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02F191D14ACCC15C04F839B3 /* Pods_Ding_Dong_DonorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +84,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D0AD1ED9240CD4C214179E7 /* Pods_Ding_Dong_DonorUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		015368DC4B6D58F21BC5BB82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC20D31CA0157CC737761A67 /* Pods_Ding_Dong_Donor.framework */,
+				2849177F361CDBF43B84F69A /* Pods_Ding_Dong_DonorTests.framework */,
+				F1D9F84BE6374DD8A25336DA /* Pods_Ding_Dong_DonorUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4900B3A9A2AD282F295D1324 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				681E746098E871545D923B05 /* Pods-Ding Dong Donor.debug.xcconfig */,
+				11D419768A2719A9638CDBCC /* Pods-Ding Dong Donor.release.xcconfig */,
+				78F0CD193DB1B149FA58B64C /* Pods-Ding Dong DonorTests.debug.xcconfig */,
+				4EAAE7D34A5B53AF8B06B29A /* Pods-Ding Dong DonorTests.release.xcconfig */,
+				3F57159102CB9CAB40C2FB84 /* Pods-Ding Dong DonorUITests.debug.xcconfig */,
+				63E166F031B5BC4C247F1CA6 /* Pods-Ding Dong DonorUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D0108A902012F10D003F1513 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +121,8 @@
 				D0108AB02012F10D003F1513 /* Ding Dong DonorTests */,
 				D0108ABB2012F10E003F1513 /* Ding Dong DonorUITests */,
 				D0108A9A2012F10D003F1513 /* Products */,
+				4900B3A9A2AD282F295D1324 /* Pods */,
+				015368DC4B6D58F21BC5BB82 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,7 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				D0108A9C2012F10D003F1513 /* AppDelegate.swift */,
-				D0108A9E2012F10D003F1513 /* ViewController.swift */,
+				D0108ACB2012F1FC003F1513 /* ViewControllers */,
+				D0108ACA2012F1F3003F1513 /* Models */,
 				D0108AA02012F10D003F1513 /* Main.storyboard */,
 				D0108AA32012F10D003F1513 /* Assets.xcassets */,
 				D0108AA52012F10D003F1513 /* LaunchScreen.storyboard */,
@@ -112,6 +155,7 @@
 			children = (
 				D0108AB12012F10D003F1513 /* Ding_Dong_DonorTests.swift */,
 				D0108AB32012F10D003F1513 /* Info.plist */,
+				D0108ACC2012F270003F1513 /* GoogleService-Info.plist */,
 			);
 			path = "Ding Dong DonorTests";
 			sourceTree = "<group>";
@@ -125,6 +169,21 @@
 			path = "Ding Dong DonorUITests";
 			sourceTree = "<group>";
 		};
+		D0108ACA2012F1F3003F1513 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D0108ACB2012F1FC003F1513 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D0108A9E2012F10D003F1513 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +191,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0108AC12012F10E003F1513 /* Build configuration list for PBXNativeTarget "Ding Dong Donor" */;
 			buildPhases = (
+				8C5D3EAC09BB455580DBA3C0 /* [CP] Check Pods Manifest.lock */,
 				D0108A952012F10D003F1513 /* Sources */,
 				D0108A962012F10D003F1513 /* Frameworks */,
 				D0108A972012F10D003F1513 /* Resources */,
+				B1E8C5E0D3DF878B7B737D77 /* [CP] Embed Pods Frameworks */,
+				7F2EF693D1B362D61A1BB8A0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +211,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0108AC42012F10E003F1513 /* Build configuration list for PBXNativeTarget "Ding Dong DonorTests" */;
 			buildPhases = (
+				A23A16507C586B8D426A43C5 /* [CP] Check Pods Manifest.lock */,
 				D0108AA92012F10D003F1513 /* Sources */,
 				D0108AAA2012F10D003F1513 /* Frameworks */,
 				D0108AAB2012F10D003F1513 /* Resources */,
+				FD5E0757C7A3F0445F9C603B /* [CP] Embed Pods Frameworks */,
+				7020E2D4EB960A4327DAB3D4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +232,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0108AC72012F10E003F1513 /* Build configuration list for PBXNativeTarget "Ding Dong DonorUITests" */;
 			buildPhases = (
+				67D85577854DF4E89E8E4B5E /* [CP] Check Pods Manifest.lock */,
 				D0108AB42012F10E003F1513 /* Sources */,
 				D0108AB52012F10E003F1513 /* Frameworks */,
 				D0108AB62012F10E003F1513 /* Resources */,
+				318D233ED2BDF6F8D017520D /* [CP] Embed Pods Frameworks */,
+				FDC01F2DB42B0A1A55A5F9CC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -242,6 +310,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0108ACD2012F270003F1513 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +322,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		318D233ED2BDF6F8D017520D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ding Dong DonorUITests/Pods-Ding Dong DonorUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67D85577854DF4E89E8E4B5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7020E2D4EB960A4327DAB3D4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ding Dong DonorTests/Pods-Ding Dong DonorTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F2EF693D1B362D61A1BB8A0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ding Dong Donor/Pods-Ding Dong Donor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C5D3EAC09BB455580DBA3C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A23A16507C586B8D426A43C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B1E8C5E0D3DF878B7B737D77 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ding Dong Donor/Pods-Ding Dong Donor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD5E0757C7A3F0445F9C603B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ding Dong DonorTests/Pods-Ding Dong DonorTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDC01F2DB42B0A1A55A5F9CC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ding Dong DonorUITests/Pods-Ding Dong DonorUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D0108A952012F10D003F1513 /* Sources */ = {
@@ -424,6 +631,7 @@
 		};
 		D0108AC22012F10E003F1513 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 681E746098E871545D923B05 /* Pods-Ding Dong Donor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,6 +647,7 @@
 		};
 		D0108AC32012F10E003F1513 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11D419768A2719A9638CDBCC /* Pods-Ding Dong Donor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +663,7 @@
 		};
 		D0108AC52012F10E003F1513 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78F0CD193DB1B149FA58B64C /* Pods-Ding Dong DonorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +681,7 @@
 		};
 		D0108AC62012F10E003F1513 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EAAE7D34A5B53AF8B06B29A /* Pods-Ding Dong DonorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +699,7 @@
 		};
 		D0108AC82012F10E003F1513 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F57159102CB9CAB40C2FB84 /* Pods-Ding Dong DonorUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +716,7 @@
 		};
 		D0108AC92012F10E003F1513 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63E166F031B5BC4C247F1CA6 /* Pods-Ding Dong DonorUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

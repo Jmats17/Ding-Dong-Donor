@@ -1,0 +1,6 @@
+framework module Pods_Ding_Dong_DonorUITests {
+  umbrella header "Pods-Ding Dong DonorUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
