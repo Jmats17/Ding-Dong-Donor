@@ -27,9 +27,10 @@
 		D0277BA520131DCD00997053 /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0277BA420131DCD00997053 /* PhotoService.swift */; };
 		D0277BA72013263000997053 /* DonationPagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0277BA62013263000997053 /* DonationPagesVC.swift */; };
 		D0277BAA201326F700997053 /* DonationPageTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0277BA9201326F700997053 /* DonationPageTableVC.swift */; };
-		D0277BAC2013AFAA00997053 /* DonationPageScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0277BAB2013AFAA00997053 /* DonationPageScannerVC.swift */; };
 		D0277BAE2013B9B700997053 /* DonationPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0277BAD2013B9B700997053 /* DonationPageVC.swift */; };
 		D0277BB02013D79D00997053 /* CreateBarcodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0277BAF2013D79D00997053 /* CreateBarcodeService.swift */; };
+		D0277BB22013E9AE00997053 /* BarcodeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0277BB12013E9AE00997053 /* BarcodeScanner.swift */; };
+		D0277BB42013ED4B00997053 /* PaymentOptionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0277BB32013ED4B00997053 /* PaymentOptionVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,9 +82,10 @@
 		D0277BA420131DCD00997053 /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
 		D0277BA62013263000997053 /* DonationPagesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationPagesVC.swift; sourceTree = "<group>"; };
 		D0277BA9201326F700997053 /* DonationPageTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationPageTableVC.swift; sourceTree = "<group>"; };
-		D0277BAB2013AFAA00997053 /* DonationPageScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationPageScannerVC.swift; sourceTree = "<group>"; };
 		D0277BAD2013B9B700997053 /* DonationPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationPageVC.swift; sourceTree = "<group>"; };
 		D0277BAF2013D79D00997053 /* CreateBarcodeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBarcodeService.swift; sourceTree = "<group>"; };
+		D0277BB12013E9AE00997053 /* BarcodeScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScanner.swift; sourceTree = "<group>"; };
+		D0277BB32013ED4B00997053 /* PaymentOptionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentOptionVC.swift; sourceTree = "<group>"; };
 		F1D9F84BE6374DD8A25336DA /* Pods_Ding_Dong_DonorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ding_Dong_DonorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -210,8 +212,8 @@
 			children = (
 				D0108AD02012FA06003F1513 /* DonationPageCreatorVC.swift */,
 				D0277BA62013263000997053 /* DonationPagesVC.swift */,
-				D0277BAB2013AFAA00997053 /* DonationPageScannerVC.swift */,
 				D0277BAD2013B9B700997053 /* DonationPageVC.swift */,
+				D0277BB32013ED4B00997053 /* PaymentOptionVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -224,6 +226,7 @@
 				D0108ADF20131BFF003F1513 /* CreatorService.swift */,
 				D0277BAF2013D79D00997053 /* CreateBarcodeService.swift */,
 				D0277BA420131DCD00997053 /* PhotoService.swift */,
+				D0277BB12013E9AE00997053 /* BarcodeScanner.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -543,10 +546,11 @@
 				D0108AD12012FA06003F1513 /* DonationPageCreatorVC.swift in Sources */,
 				D0277BA72013263000997053 /* DonationPagesVC.swift in Sources */,
 				D0108ACF2012F505003F1513 /* DonationPage.swift in Sources */,
+				D0277BB22013E9AE00997053 /* BarcodeScanner.swift in Sources */,
+				D0277BB42013ED4B00997053 /* PaymentOptionVC.swift in Sources */,
 				D0108ADB20130F28003F1513 /* Constants.swift in Sources */,
 				D0108A9D2012F10D003F1513 /* AppDelegate.swift in Sources */,
 				D0277BAA201326F700997053 /* DonationPageTableVC.swift in Sources */,
-				D0277BAC2013AFAA00997053 /* DonationPageScannerVC.swift in Sources */,
 				D0108AE020131BFF003F1513 /* CreatorService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

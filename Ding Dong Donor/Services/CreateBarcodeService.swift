@@ -17,7 +17,7 @@ struct CreateBarcodeService {
     func createBarcode(imageUrl : URL, ref : DatabaseReference, completion: @escaping (UIImage?) -> Void) {
         
         KingfisherManager.shared.retrieveImage(with: imageUrl, options: nil, progressBlock: nil, completionHandler: { image, error, cacheType, imageURL in
-            guard let barcodeImage = QRCode.generateImage("\(ref)", avatarImage: image, avatarScale: 0.4)
+            guard let barcodeImage = QRCode.generateImage("\(ref)", avatarImage: nil)
                 else {
                 return completion(nil)}
             completion(barcodeImage)
