@@ -22,6 +22,8 @@
 		D0108AD32012FFB1003F1513 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0108AD22012FFB0003F1513 /* GoogleService-Info.plist */; };
 		D0108AD6201307C1003F1513 /* CreatePageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0108AD5201307C1003F1513 /* CreatePageService.swift */; };
 		D0108AD820130A49003F1513 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0108AD720130A49003F1513 /* StorageService.swift */; };
+		D0108ADB20130F28003F1513 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0108ADA20130F28003F1513 /* Constants.swift */; };
+		D0108ADE201314B0003F1513 /* StorageReference+Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0108ADD201314B0003F1513 /* StorageReference+Page.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		D0108AD22012FFB0003F1513 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D0108AD5201307C1003F1513 /* CreatePageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePageService.swift; sourceTree = "<group>"; };
 		D0108AD720130A49003F1513 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		D0108ADA20130F28003F1513 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D0108ADD201314B0003F1513 /* StorageReference+Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StorageReference+Page.swift"; sourceTree = "<group>"; };
 		F1D9F84BE6374DD8A25336DA /* Pods_Ding_Dong_DonorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ding_Dong_DonorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -148,6 +152,8 @@
 			isa = PBXGroup;
 			children = (
 				D0108A9C2012F10D003F1513 /* AppDelegate.swift */,
+				D0108ADC20131478003F1513 /* Extensions */,
+				D0108AD920130F1D003F1513 /* Supporting */,
 				D0108AD4201307A7003F1513 /* Services */,
 				D0108ACB2012F1FC003F1513 /* ViewControllers */,
 				D0108ACA2012F1F3003F1513 /* Models */,
@@ -202,6 +208,22 @@
 				D0108AD720130A49003F1513 /* StorageService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		D0108AD920130F1D003F1513 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				D0108ADA20130F28003F1513 /* Constants.swift */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		D0108ADC20131478003F1513 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D0108ADD201314B0003F1513 /* StorageReference+Page.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -488,8 +510,10 @@
 			files = (
 				D0108AD6201307C1003F1513 /* CreatePageService.swift in Sources */,
 				D0108AD820130A49003F1513 /* StorageService.swift in Sources */,
+				D0108ADE201314B0003F1513 /* StorageReference+Page.swift in Sources */,
 				D0108AD12012FA06003F1513 /* DonationPageCreatorVC.swift in Sources */,
 				D0108ACF2012F505003F1513 /* DonationPage.swift in Sources */,
+				D0108ADB20130F28003F1513 /* Constants.swift in Sources */,
 				D0108A9F2012F10D003F1513 /* ViewController.swift in Sources */,
 				D0108A9D2012F10D003F1513 /* AppDelegate.swift in Sources */,
 			);

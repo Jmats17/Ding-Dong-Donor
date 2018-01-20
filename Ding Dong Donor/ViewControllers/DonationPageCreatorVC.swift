@@ -39,7 +39,7 @@ class DonationPageCreatorVC : UIViewController, ImagePickerDelegate {
         guard let name = nameLabel.text else { return submitButton.isEnabled = false}
         guard let creator = creatorLabel.text else {return submitButton.isEnabled = false}
         guard let barcodePic = barcodeImage.image else {return submitButton.isEnabled = false}
-        CreatePageService.create(for: barcodePic)
+        CreatePageService.create(for: barcodePic, name: name, creator: creator, currentAmtRaised: 0)
         //let donationPage = DonationPage(name: name, creator: creator, currentAmtRaised: 0, qrCode: barcodePic)
     }
     
