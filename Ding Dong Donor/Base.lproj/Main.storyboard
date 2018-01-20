@@ -111,6 +111,35 @@
             </objects>
             <point key="canvasLocation" x="388" y="-555"/>
         </scene>
+        <!--Donation Page ScannerVC-->
+        <scene sceneID="Oce-jF-lQ0">
+            <objects>
+                <viewController id="oY8-6a-EWq" customClass="DonationPageScannerVC" customModule="Ding_Dong_Donor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YB3-E5-W30">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bVk-3r-gfF">
+                                <rect key="frame" x="67" y="72" width="240" height="200"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bVk-3r-gfF" firstAttribute="centerX" secondItem="YB3-E5-W30" secondAttribute="centerX" id="5uU-Gg-Rd2"/>
+                            <constraint firstItem="bVk-3r-gfF" firstAttribute="top" secondItem="Qd2-GA-f7h" secondAttribute="top" constant="52" id="GNt-uj-3G5"/>
+                            <constraint firstItem="Qd2-GA-f7h" firstAttribute="bottom" secondItem="bVk-3r-gfF" secondAttribute="bottom" constant="395" id="abS-cb-VCV"/>
+                            <constraint firstItem="bVk-3r-gfF" firstAttribute="leading" secondItem="Qd2-GA-f7h" secondAttribute="leading" constant="67" id="wBx-lH-pjX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qd2-GA-f7h"/>
+                    </view>
+                    <connections>
+                        <outlet property="scannerImageView" destination="bVk-3r-gfF" id="fSb-ar-I70"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NY1-l1-DaM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1112.8" y="-555.47226386806597"/>
+        </scene>
         <!--Donation PageVC-->
         <scene sceneID="XdY-Mh-9F8">
             <objects>
