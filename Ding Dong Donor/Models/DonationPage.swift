@@ -39,6 +39,24 @@ class DonationPage  {
 
     }
     
+    init?(snapshot: DataSnapshot) {
+        guard let dict = snapshot.value as? [String : Any],
+            let imageURL = dict["image_url"] as? String,
+            let pageName = dict["page_name"] as? String,
+            let createdAgo = dict["created_at"] as? TimeInterval,
+            let creator = dict["creator"] as? String,
+            let currentAmtRaised = dict["current_amt_raised"] as? Int
+
+
+            else { return nil }
+        
+        self.key = snapshot.key
+        self.imageURL = imageURL
+        self.name = pageName
+        self.creator = creator
+        self.currentAmtRaised = currentAmtRaised
+        self.creationDate = Date(timeIntervalSince1970: createdAgo)
+    }
     
     
 
