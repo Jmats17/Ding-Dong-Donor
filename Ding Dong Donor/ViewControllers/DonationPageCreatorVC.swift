@@ -37,7 +37,6 @@ class DonationPageCreatorVC : UIViewController {
         guard let barcodePic = barcodeImage.image else {return}
         CreatePageService.create(for: barcodePic, name: name, creator: creator, currentAmtRaised: 0)
         
-        //let donationPage = DonationPage(name: name, creator: creator, currentAmtRaised: 0, qrCode: barcodePic)
     }
 
     

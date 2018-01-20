@@ -11,7 +11,6 @@
 		53949CDD8898F27618F4EF1C /* Pods_Ding_Dong_Donor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC20D31CA0157CC737761A67 /* Pods_Ding_Dong_Donor.framework */; };
 		6D0AD1ED9240CD4C214179E7 /* Pods_Ding_Dong_DonorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D9F84BE6374DD8A25336DA /* Pods_Ding_Dong_DonorUITests.framework */; };
 		D0108A9D2012F10D003F1513 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0108A9C2012F10D003F1513 /* AppDelegate.swift */; };
-		D0108A9F2012F10D003F1513 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0108A9E2012F10D003F1513 /* ViewController.swift */; };
 		D0108AA22012F10D003F1513 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0108AA02012F10D003F1513 /* Main.storyboard */; };
 		D0108AA42012F10D003F1513 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0108AA32012F10D003F1513 /* Assets.xcassets */; };
 		D0108AA72012F10D003F1513 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0108AA52012F10D003F1513 /* LaunchScreen.storyboard */; };
@@ -26,6 +25,8 @@
 		D0108ADE201314B0003F1513 /* StorageReference+Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0108ADD201314B0003F1513 /* StorageReference+Page.swift */; };
 		D0108AE020131BFF003F1513 /* CreatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0108ADF20131BFF003F1513 /* CreatorService.swift */; };
 		D0277BA520131DCD00997053 /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0277BA420131DCD00997053 /* PhotoService.swift */; };
+		D0277BA72013263000997053 /* DonationPagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0277BA62013263000997053 /* DonationPagesVC.swift */; };
+		D0277BAA201326F700997053 /* DonationPageTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0277BA9201326F700997053 /* DonationPageTableVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +57,6 @@
 		AC20D31CA0157CC737761A67 /* Pods_Ding_Dong_Donor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ding_Dong_Donor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0108A992012F10D003F1513 /* Ding Dong Donor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ding Dong Donor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0108A9C2012F10D003F1513 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D0108A9E2012F10D003F1513 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D0108AA12012F10D003F1513 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0108AA32012F10D003F1513 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0108AA62012F10D003F1513 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,6 +76,8 @@
 		D0108ADD201314B0003F1513 /* StorageReference+Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StorageReference+Page.swift"; sourceTree = "<group>"; };
 		D0108ADF20131BFF003F1513 /* CreatorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorService.swift; sourceTree = "<group>"; };
 		D0277BA420131DCD00997053 /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
+		D0277BA62013263000997053 /* DonationPagesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationPagesVC.swift; sourceTree = "<group>"; };
+		D0277BA9201326F700997053 /* DonationPageTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationPageTableVC.swift; sourceTree = "<group>"; };
 		F1D9F84BE6374DD8A25336DA /* Pods_Ding_Dong_DonorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ding_Dong_DonorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -156,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				D0108A9C2012F10D003F1513 /* AppDelegate.swift */,
+				D0277BA8201326E300997053 /* TableViewCells */,
 				D0108ADC20131478003F1513 /* Extensions */,
 				D0108AD920130F1D003F1513 /* Supporting */,
 				D0108AD4201307A7003F1513 /* Services */,
@@ -199,8 +202,8 @@
 		D0108ACB2012F1FC003F1513 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				D0108A9E2012F10D003F1513 /* ViewController.swift */,
 				D0108AD02012FA06003F1513 /* DonationPageCreatorVC.swift */,
+				D0277BA62013263000997053 /* DonationPagesVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -230,6 +233,14 @@
 				D0108ADD201314B0003F1513 /* StorageReference+Page.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D0277BA8201326E300997053 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				D0277BA9201326F700997053 /* DonationPageTableVC.swift */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -519,10 +530,11 @@
 				D0108AD820130A49003F1513 /* StorageService.swift in Sources */,
 				D0108ADE201314B0003F1513 /* StorageReference+Page.swift in Sources */,
 				D0108AD12012FA06003F1513 /* DonationPageCreatorVC.swift in Sources */,
+				D0277BA72013263000997053 /* DonationPagesVC.swift in Sources */,
 				D0108ACF2012F505003F1513 /* DonationPage.swift in Sources */,
 				D0108ADB20130F28003F1513 /* Constants.swift in Sources */,
-				D0108A9F2012F10D003F1513 /* ViewController.swift in Sources */,
 				D0108A9D2012F10D003F1513 /* AppDelegate.swift in Sources */,
+				D0277BAA201326F700997053 /* DonationPageTableVC.swift in Sources */,
 				D0108AE020131BFF003F1513 /* CreatorService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
