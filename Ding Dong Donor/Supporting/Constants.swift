@@ -17,8 +17,8 @@ struct Constants {
         static func pages() -> DatabaseReference {
             return Database.database().reference().child("pages").child(Constants.DeviceUID.deviceID)
         }
-        static func page(link : String) -> DatabaseReference {
-            return Database.database().reference().child("pages").child(Constants.DeviceUID.deviceID).child(link)
+        static func page() -> DatabaseReference {
+            return Database.database().reference()
         }
     }
 }

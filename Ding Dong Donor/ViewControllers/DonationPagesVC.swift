@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import FirebaseDatabase
 
 class DonationPagesTableVC: UITableViewController {
     
@@ -34,7 +35,7 @@ class DonationPagesTableVC: UITableViewController {
         if segue.identifier == "showDonationPage" {
             let donationPage = segue.destination as! DonationPageVC
             let page = pages[(tableView.indexPathForSelectedRow?.row)!]
-            donationPage.pageRef = Constants.PagePointer.page(link: page.key!)
+            donationPage.userKeyRef = "\(Constants.DeviceUID.deviceID)/\(page.key!)"
         }
     }
     

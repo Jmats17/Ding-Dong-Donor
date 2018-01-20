@@ -17,13 +17,14 @@ class DonationPageVC : UIViewController {
     @IBOutlet weak var creatorLabel : UILabel!
     @IBOutlet weak var barcodeImage : UIImageView!
     var pageRef : DatabaseReference?
+    var userKeyRef : String?
     var page : DonationPage?
     var barcodeService = CreateBarcodeService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let pageRef = pageRef {
-            CreatorService.showPage(for: pageRef) { (page) in
+        if let userKeyRef = userKeyRef {
+            CreatorService.showPage(for: Constants.PagePointer.page().child("pages").child("\(userKeyRef)")) { (page) in
                 self.page = page
                 self.nameLabel.text = page?.name
                 self.creatorLabel.text = page?.creator
@@ -32,7 +33,7 @@ class DonationPageVC : UIViewController {
 //                    guard let barcodeImage = QRCode.generateImage("\(pageRef)", avatarImage: image, avatarScale: 0.7) else {return}
 //                    self.barcodeImage.image = barcodeImage
 //                })
-                self.barcodeService.createBarcode(imageUrl: imageURL!, ref: pageRef){ (barcodeImg) in
+                self.barcodeService.createBarcode(imageUrl: imageURL!, stringRef: userKeyRef){ (barcodeImg) in
                     
                     self.barcodeImage.image = barcodeImg
                 }
