@@ -23,6 +23,8 @@ class DonationPageVC : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+
         if let userKeyRef = userKeyRef {
             CreatorService.showPage(for: Constants.PagePointer.page().child("pages").child("\(userKeyRef)")) { (page) in
                 self.page = page

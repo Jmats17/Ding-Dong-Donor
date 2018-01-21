@@ -6,7 +6,6 @@ target 'Ding Dong Donor' do
   use_frameworks!
 pod 'Firebase/Core'
 pod 'Firebase/Database'
-pod "EFQRCode", '~> 4.2.1'
 pod 'Firebase/Storage'
 pod 'ImagePicker'
 pod 'SwiftQRCode'

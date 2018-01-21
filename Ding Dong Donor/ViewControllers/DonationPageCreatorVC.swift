@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 import ImagePicker
-import EFQRCode
 import SwiftQRCode
 
 class DonationPageCreatorVC : UIViewController {
@@ -22,10 +21,13 @@ class DonationPageCreatorVC : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
         nameLabel.delegate = self
         creatorLabel.delegate = self
+
     }
-    
+ 
+
     
     @IBAction func createPage() {
         guard let name = nameLabel.text else { return}
@@ -34,7 +36,6 @@ class DonationPageCreatorVC : UIViewController {
         
     }
 
-    
     
 }
 

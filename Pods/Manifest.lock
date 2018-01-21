@@ -34,7 +34,6 @@ PODS:
     - Braintree/UnionPay (~> 4.0)
     - BraintreeDropIn/UIKit
   - BraintreeDropIn/UIKit (5.3.0)
-  - EFQRCode (4.2.1)
   - Firebase/Core (4.8.0):
     - FirebaseAnalytics (= 4.0.5)
     - FirebaseCore (= 4.0.13)
@@ -80,7 +79,6 @@ DEPENDENCIES:
   - BarcodeScanner
   - Braintree
   - BraintreeDropIn
-  - EFQRCode (~> 4.2.1)
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
@@ -93,7 +91,6 @@ SPEC CHECKSUMS:
   BarcodeScanner: 0567807f92007298a50589927d7b5c24c7cf3610
   Braintree: 424a8b0bf1d31fe1110035cfde438701e1425c1a
   BraintreeDropIn: 5882cca8dc3c4a5b8f11faa44fca52323253c857
-  EFQRCode: f3fd67049faa07adb575495c05d72a34e407a940
   Firebase: 710decbbc6d9d48530e9a5dba3209740c3532e05
   FirebaseAnalytics: 5b02a63ead2c3f0259cfc7f15e053e440587ecf8
   FirebaseCore: 3c02ec652db3d03fdc8bc6d9154af3e20d64b6f5
@@ -108,6 +105,6 @@ SPEC CHECKSUMS:
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   SwiftQRCode: 280589699d84195c2c573011aa52f2c015c31c34
 
-PODFILE CHECKSUM: 222f91c2783ccc5dee77a1e2f5817dfe87198cca
+PODFILE CHECKSUM: 184b00ae0d9f2f2b0fd9522273fbed107a179964
 
 COCOAPODS: 1.2.0

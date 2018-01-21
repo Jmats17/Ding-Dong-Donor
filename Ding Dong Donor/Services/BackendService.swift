@@ -31,7 +31,7 @@ struct BackendService {
             }.resume()
     }
     
-    static func showDropIn(clientTokenOrTokenizationKey: String, amt : Int, viewController : UIViewController) {
+    static func showDropIn(clientTokenOrTokenizationKey: String,page : DonationPage,ref : String ,amt : Int, viewController : UIViewController) {
         let request =  BTDropInRequest()
         let dropIn = BTDropInController(authorization: clientTokenOrTokenizationKey, request: request)
         { (controller, result, error) in
@@ -46,7 +46,7 @@ struct BackendService {
                 result.paymentOptionType = .coinbase
                 result.paymentOptionType = .venmo
 
-                BackendService.postNonceToServer(paymentMethodNonce: (result.paymentMethod?.nonce)!, amt: amt)
+                BackendService.postNonceToServer(paymentMethodNonce: (result.paymentMethod?.nonce)!, amt: amt, page: page, ref: ref)
                 
             }
             controller.dismiss(animated: true, completion: nil)
@@ -54,7 +54,7 @@ struct BackendService {
         viewController.present(dropIn!, animated: true, completion: nil)
     }
     
-    static func postNonceToServer(paymentMethodNonce: String, amt : Int) {
+    static func postNonceToServer(paymentMethodNonce: String, amt : Int, page : DonationPage, ref : String) {
         // Update URL with your server
         let paymentURL = URL(string: "https://cannr-app.herokuapp.com/checkout")!
         var request = URLRequest(url: paymentURL)
@@ -63,6 +63,8 @@ struct BackendService {
         
         URLSession.shared.dataTask(with: request) { (data, response, error) -> Void in
             // TODO: Handle success or failure
+
+            CreatePageService.updateAmount(page: page, ref: ref, currentAmtRaised: amt)
             }.resume()
     }
 }

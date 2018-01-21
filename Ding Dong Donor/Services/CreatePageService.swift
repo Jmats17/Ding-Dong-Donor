@@ -26,7 +26,9 @@ struct CreatePageService {
 //    }
     
     static func updateAmount(page : DonationPage,ref : String,currentAmtRaised : Int) {
+ 
         let newAmt = Int(page.currentAmtRaised) + currentAmtRaised
+        print(newAmt)
         let page = DonationPage(name: page.name, creator: page.creator, currentAmtRaised: newAmt)
         let dict = page.dictValue
         

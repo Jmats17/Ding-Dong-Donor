@@ -10,6 +10,7 @@
 		02F191D14ACCC15C04F839B3 /* Pods_Ding_Dong_DonorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2849177F361CDBF43B84F69A /* Pods_Ding_Dong_DonorTests.framework */; };
 		53949CDD8898F27618F4EF1C /* Pods_Ding_Dong_Donor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC20D31CA0157CC737761A67 /* Pods_Ding_Dong_Donor.framework */; };
 		6D0AD1ED9240CD4C214179E7 /* Pods_Ding_Dong_DonorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D9F84BE6374DD8A25336DA /* Pods_Ding_Dong_DonorUITests.framework */; };
+		D0002E1C2014CFC6002286F8 /* navController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0002E1B2014CFC6002286F8 /* navController.swift */; };
 		D0108A9D2012F10D003F1513 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0108A9C2012F10D003F1513 /* AppDelegate.swift */; };
 		D0108AA22012F10D003F1513 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0108AA02012F10D003F1513 /* Main.storyboard */; };
 		D0108AA42012F10D003F1513 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0108AA32012F10D003F1513 /* Assets.xcassets */; };
@@ -61,6 +62,7 @@
 		681E746098E871545D923B05 /* Pods-Ding Dong Donor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ding Dong Donor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ding Dong Donor/Pods-Ding Dong Donor.debug.xcconfig"; sourceTree = "<group>"; };
 		78F0CD193DB1B149FA58B64C /* Pods-Ding Dong DonorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ding Dong DonorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ding Dong DonorTests/Pods-Ding Dong DonorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AC20D31CA0157CC737761A67 /* Pods_Ding_Dong_Donor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ding_Dong_Donor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0002E1B2014CFC6002286F8 /* navController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navController.swift; sourceTree = "<group>"; };
 		D0108A992012F10D003F1513 /* Ding Dong Donor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ding Dong Donor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0108A9C2012F10D003F1513 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0108AA12012F10D003F1513 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 				D0277BAD2013B9B700997053 /* DonationPageVC.swift */,
 				D0277BB32013ED4B00997053 /* PaymentOptionVC.swift */,
 				D076F5962014A2F100277CD0 /* ScannerViewController.swift */,
+				D0002E1B2014CFC6002286F8 /* navController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -553,6 +556,7 @@
 				D0277BA520131DCD00997053 /* PhotoService.swift in Sources */,
 				D0108AD6201307C1003F1513 /* CreatePageService.swift in Sources */,
 				D0277BB02013D79D00997053 /* CreateBarcodeService.swift in Sources */,
+				D0002E1C2014CFC6002286F8 /* navController.swift in Sources */,
 				D0277BAE2013B9B700997053 /* DonationPageVC.swift in Sources */,
 				D0108AD820130A49003F1513 /* StorageService.swift in Sources */,
 				D0108ADE201314B0003F1513 /* StorageReference+Page.swift in Sources */,
