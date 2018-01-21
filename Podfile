@@ -14,7 +14,6 @@ pod 'BarcodeScanner'
 pod 'Kingfisher', '~> 4.0'
 pod 'Stripe'
 pod 'Alamofire', '~> 4.5'
-pod 'CardIO'
 
   # Pods for Ding Dong Donor
 
