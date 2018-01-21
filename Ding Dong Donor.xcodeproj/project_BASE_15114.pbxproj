@@ -166,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				D0108A9C2012F10D003F1513 /* AppDelegate.swift */,
+				D0277BB9201403E200997053 /* Stripe */,
 				D0277BA8201326E300997053 /* TableViewCells */,
 				D0108ADC20131478003F1513 /* Extensions */,
 				D0108AD920130F1D003F1513 /* Supporting */,
@@ -253,6 +254,13 @@
 				D0277BA9201326F700997053 /* DonationPageTableVC.swift */,
 			);
 			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		D0277BB9201403E200997053 /* Stripe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Stripe;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -719,7 +727,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L254PU256S;
+				DEVELOPMENT_TEAM = 96QE7H4LVL;
 				INFOPLIST_FILE = "Ding Dong Donor/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.justinmatsnev.Ding-Dong-Donor";
@@ -735,7 +743,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L254PU256S;
+				DEVELOPMENT_TEAM = 96QE7H4LVL;
 				INFOPLIST_FILE = "Ding Dong Donor/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.justinmatsnev.Ding-Dong-Donor";
