@@ -12,8 +12,9 @@ pod 'ImagePicker'
 pod 'SwiftQRCode'
 pod 'BarcodeScanner'
 pod 'Kingfisher', '~> 4.0'
-pod 'Stripe'
 pod 'Alamofire', '~> 4.5'
+pod 'BraintreeDropIn'
+pod 'Braintree'
 
   # Pods for Ding Dong Donor
 
