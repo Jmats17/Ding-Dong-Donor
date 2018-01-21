@@ -166,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				D0108A9C2012F10D003F1513 /* AppDelegate.swift */,
+				D0277BB9201403E200997053 /* Stripe */,
 				D0277BA8201326E300997053 /* TableViewCells */,
 				D0108ADC20131478003F1513 /* Extensions */,
 				D0108AD920130F1D003F1513 /* Supporting */,
@@ -253,6 +254,13 @@
 				D0277BA9201326F700997053 /* DonationPageTableVC.swift */,
 			);
 			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		D0277BB9201403E200997053 /* Stripe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Stripe;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

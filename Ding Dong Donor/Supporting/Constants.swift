@@ -13,6 +13,10 @@ struct Constants {
     struct DeviceUID {
         static let deviceID = UIDevice.current.identifierForVendor!.uuidString
     }
+    struct StripeKey {
+        static let apiKey = "pk_test_4W8hdFleOIMWTQq7GZRcyvZn"
+        static let merchantKey = "merchant.com.cannr"
+    }
     struct PagePointer {
         static func pages() -> DatabaseReference {
             return Database.database().reference().child("pages").child(Constants.DeviceUID.deviceID)

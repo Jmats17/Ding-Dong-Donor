@@ -4,14 +4,17 @@
 target 'Ding Dong Donor' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-  pod 'Firebase/Core'
+pod 'Firebase/Core'
 pod 'Firebase/Database'
 pod "EFQRCode", '~> 4.2.1'
 pod 'Firebase/Storage'
 pod 'ImagePicker'
 pod 'SwiftQRCode'
 pod 'BarcodeScanner'
-  pod 'Kingfisher', '~> 4.0'
+pod 'Kingfisher', '~> 4.0'
+pod 'Stripe'
+pod 'Alamofire', '~> 4.5'
+pod 'CardIO'
 
   # Pods for Ding Dong Donor
 

@@ -1,5 +1,7 @@
 PODS:
+  - Alamofire (4.6.0)
   - BarcodeScanner (3.0.2)
+  - CardIO (5.4.1)
   - EFQRCode (4.2.1)
   - Firebase/Core (4.8.0):
     - FirebaseAnalytics (= 4.0.5)
@@ -39,20 +41,26 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - Stripe (11.5.0)
   - SwiftQRCode (3.0.2)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.5)
   - BarcodeScanner
+  - CardIO
   - EFQRCode (~> 4.2.1)
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
   - ImagePicker
   - Kingfisher (~> 4.0)
+  - Stripe
   - SwiftQRCode
 
 SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   BarcodeScanner: 0567807f92007298a50589927d7b5c24c7cf3610
+  CardIO: 56983b39b62f495fc6dae9ad7cf875143df06443
   EFQRCode: f3fd67049faa07adb575495c05d72a34e407a940
   Firebase: 710decbbc6d9d48530e9a5dba3209740c3532e05
   FirebaseAnalytics: 5b02a63ead2c3f0259cfc7f15e053e440587ecf8
@@ -66,8 +74,9 @@ SPEC CHECKSUMS:
   Kingfisher: 1f9157d9c02b380cbd0b7cc890161195164eb634
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  Stripe: 10761682d20dc491c52287393c800db056c9748d
   SwiftQRCode: 280589699d84195c2c573011aa52f2c015c31c34
 
-PODFILE CHECKSUM: d7b26689e4c9e5b49e84bba978642651871f5a0b
+PODFILE CHECKSUM: 6aa1d24a16e9a591eab62e846ce2936c89144f44
 
 COCOAPODS: 1.2.0
