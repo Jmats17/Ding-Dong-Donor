@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		02F191D14ACCC15C04F839B3 /* Pods_Ding_Dong_DonorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2849177F361CDBF43B84F69A /* Pods_Ding_Dong_DonorTests.framework */; };
+		4A311C50201423530043F3DF /* StyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A311C4F201423530043F3DF /* StyleKit.swift */; };
+		4A311C52201423C30043F3DF /* startPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A311C51201423C30043F3DF /* startPage.swift */; };
+		4A311C54201428EA0043F3DF /* Apple Pay.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A311C53201428EA0043F3DF /* Apple Pay.png */; };
+		4A311C562014290C0043F3DF /* Apple Pay@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A311C552014290C0043F3DF /* Apple Pay@3x.png */; };
 		53949CDD8898F27618F4EF1C /* Pods_Ding_Dong_Donor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC20D31CA0157CC737761A67 /* Pods_Ding_Dong_Donor.framework */; };
 		6D0AD1ED9240CD4C214179E7 /* Pods_Ding_Dong_DonorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D9F84BE6374DD8A25336DA /* Pods_Ding_Dong_DonorUITests.framework */; };
 		D0108A9D2012F10D003F1513 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0108A9C2012F10D003F1513 /* AppDelegate.swift */; };
@@ -54,6 +58,10 @@
 		11D419768A2719A9638CDBCC /* Pods-Ding Dong Donor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ding Dong Donor.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ding Dong Donor/Pods-Ding Dong Donor.release.xcconfig"; sourceTree = "<group>"; };
 		2849177F361CDBF43B84F69A /* Pods_Ding_Dong_DonorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ding_Dong_DonorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F57159102CB9CAB40C2FB84 /* Pods-Ding Dong DonorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ding Dong DonorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ding Dong DonorUITests/Pods-Ding Dong DonorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4A311C4F201423530043F3DF /* StyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StyleKit.swift; path = ../../Downloads/StyleKit.swift; sourceTree = "<group>"; };
+		4A311C51201423C30043F3DF /* startPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startPage.swift; sourceTree = "<group>"; };
+		4A311C53201428EA0043F3DF /* Apple Pay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Apple Pay.png"; path = "../../../Downloads/Apple Pay.png"; sourceTree = "<group>"; };
+		4A311C552014290C0043F3DF /* Apple Pay@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Apple Pay@3x.png"; path = "../../../Downloads/Apple Pay@3x.png"; sourceTree = "<group>"; };
 		4EAAE7D34A5B53AF8B06B29A /* Pods-Ding Dong DonorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ding Dong DonorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ding Dong DonorTests/Pods-Ding Dong DonorTests.release.xcconfig"; sourceTree = "<group>"; };
 		63E166F031B5BC4C247F1CA6 /* Pods-Ding Dong DonorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ding Dong DonorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ding Dong DonorUITests/Pods-Ding Dong DonorUITests.release.xcconfig"; sourceTree = "<group>"; };
 		681E746098E871545D923B05 /* Pods-Ding Dong Donor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ding Dong Donor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ding Dong Donor/Pods-Ding Dong Donor.debug.xcconfig"; sourceTree = "<group>"; };
@@ -143,6 +151,8 @@
 		D0108A902012F10D003F1513 = {
 			isa = PBXGroup;
 			children = (
+				4A311C4F201423530043F3DF /* StyleKit.swift */,
+				4A311C51201423C30043F3DF /* startPage.swift */,
 				D0108A9B2012F10D003F1513 /* Ding Dong Donor */,
 				D0108AB02012F10D003F1513 /* Ding Dong DonorTests */,
 				D0108ABB2012F10E003F1513 /* Ding Dong DonorUITests */,
@@ -173,6 +183,8 @@
 				D0108ACB2012F1FC003F1513 /* ViewControllers */,
 				D0108ACA2012F1F3003F1513 /* Models */,
 				D0108AA02012F10D003F1513 /* Main.storyboard */,
+				4A311C552014290C0043F3DF /* Apple Pay@3x.png */,
+				4A311C53201428EA0043F3DF /* Apple Pay.png */,
 				D0108AA32012F10D003F1513 /* Assets.xcassets */,
 				D0108AA52012F10D003F1513 /* LaunchScreen.storyboard */,
 				D0108AA82012F10D003F1513 /* Info.plist */,
@@ -373,7 +385,9 @@
 			files = (
 				D0108AA72012F10D003F1513 /* LaunchScreen.storyboard in Resources */,
 				D0108AD32012FFB1003F1513 /* GoogleService-Info.plist in Resources */,
+				4A311C562014290C0043F3DF /* Apple Pay@3x.png in Resources */,
 				D0108AA42012F10D003F1513 /* Assets.xcassets in Resources */,
+				4A311C54201428EA0043F3DF /* Apple Pay.png in Resources */,
 				D0108AA22012F10D003F1513 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -539,8 +553,10 @@
 			files = (
 				D0277BA520131DCD00997053 /* PhotoService.swift in Sources */,
 				D0108AD6201307C1003F1513 /* CreatePageService.swift in Sources */,
+				4A311C50201423530043F3DF /* StyleKit.swift in Sources */,
 				D0277BB02013D79D00997053 /* CreateBarcodeService.swift in Sources */,
 				D0277BAE2013B9B700997053 /* DonationPageVC.swift in Sources */,
+				4A311C52201423C30043F3DF /* startPage.swift in Sources */,
 				D0108AD820130A49003F1513 /* StorageService.swift in Sources */,
 				D0108ADE201314B0003F1513 /* StorageReference+Page.swift in Sources */,
 				D0108AD12012FA06003F1513 /* DonationPageCreatorVC.swift in Sources */,
@@ -719,7 +735,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 96QE7H4LVL;
+				DEVELOPMENT_TEAM = L254PU256S;
 				INFOPLIST_FILE = "Ding Dong Donor/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.justinmatsnev.Ding-Dong-Donor";
@@ -735,7 +751,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 96QE7H4LVL;
+				DEVELOPMENT_TEAM = L254PU256S;
 				INFOPLIST_FILE = "Ding Dong Donor/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.justinmatsnev.Ding-Dong-Donor";
