@@ -32,6 +32,7 @@
 		D0277BB42013ED4B00997053 /* PaymentOptionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0277BB32013ED4B00997053 /* PaymentOptionVC.swift */; };
 		D0277BC7201456AA00997053 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0277BC6201456AA00997053 /* GoogleService-Info.plist */; };
 		D076F5952014804D00277CD0 /* BackendService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D076F5942014804D00277CD0 /* BackendService.swift */; };
+		D076F5972014A2F100277CD0 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D076F5962014A2F100277CD0 /* ScannerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		D0277BC52014543300997053 /* Ding Dong Donor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Ding Dong Donor.entitlements"; sourceTree = "<group>"; };
 		D0277BC6201456AA00997053 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D076F5942014804D00277CD0 /* BackendService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendService.swift; sourceTree = "<group>"; };
+		D076F5962014A2F100277CD0 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		F1D9F84BE6374DD8A25336DA /* Pods_Ding_Dong_DonorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ding_Dong_DonorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -218,6 +220,7 @@
 				D0277BA62013263000997053 /* DonationPagesVC.swift */,
 				D0277BAD2013B9B700997053 /* DonationPageVC.swift */,
 				D0277BB32013ED4B00997053 /* PaymentOptionVC.swift */,
+				D076F5962014A2F100277CD0 /* ScannerViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -553,6 +556,7 @@
 				D0277BAE2013B9B700997053 /* DonationPageVC.swift in Sources */,
 				D0108AD820130A49003F1513 /* StorageService.swift in Sources */,
 				D0108ADE201314B0003F1513 /* StorageReference+Page.swift in Sources */,
+				D076F5972014A2F100277CD0 /* ScannerViewController.swift in Sources */,
 				D0108AD12012FA06003F1513 /* DonationPageCreatorVC.swift in Sources */,
 				D0277BA72013263000997053 /* DonationPagesVC.swift in Sources */,
 				D076F5952014804D00277CD0 /* BackendService.swift in Sources */,

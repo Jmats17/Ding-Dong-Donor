@@ -11,40 +11,62 @@ import UIKit
 import FirebaseDatabase
 import BraintreeDropIn
 import Braintree
+
 class PaymentOptionVC : UIViewController {
-    private var merchantID = "merchant.com.justinmatsnev.Ding-Dong-Donor.cannr"
+    
     @IBOutlet weak var nameLabel : UILabel!
     @IBOutlet weak var creatorLabel : UILabel!
-    @IBOutlet weak var amtRaisedLabel : UILabel!
+    @IBOutlet weak var amountSegmentedControl : UISegmentedControl!
+    var amount : Int = 0
+    var ref : String?
+    var page : DonationPage?
     let barcodeScanner = Scanner()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        nameLabel.text = "Scan a charity!"
+        creatorLabel.text = "Even the smallest amount can make a big difference."
         barcodeScanner.completionHandler = { ref in
             CreatorService.showPage(for: Constants.PagePointer.page().child("pages").child(ref), completion: { (page) in
                 self.nameLabel.text = page?.name
                 self.creatorLabel.text = page?.creator
-                self.amtRaisedLabel.text = "$\((page?.currentAmtRaised)!)"
+                self.page = page
+                self.ref = ref
             })
             
         }
         BackendService.fetchClientToken()
     }
     
-    
-    
-    
-    @IBAction func scan(sender : Any) {
+    @IBAction func switchAmount(_ sender: UISegmentedControl) {
+        
+        switch (sender.selectedSegmentIndex) {
+        case 0:
+            amount = 1
+        case 1:
+            amount = 5
+        case 2:
+            amount = 10
+        case 3:
+            amount = 20
+        default:
+            amount = 1
+            break
+        }
+        
+    }
+    @IBAction func paymentSelected(sender : Any) {
+        guard let page = page else {return}
+        guard let ref = ref else {return}
+       // CreatePageService.updateAmount(page: page, ref: ref, currentAmtRaised: amount)
+
+        BackendService.showDropIn(clientTokenOrTokenizationKey: BackendService.clientToken ?? "", amt: amount, viewController: self)
+
+    }
+    @IBAction func scanner(sender : Any) {
         barcodeScanner.presentBarcodeScanner(from: self)
-        //
-    }
-
-    @IBAction func cardSelected(sender : Any) {
-      
-        BackendService.showDropIn(clientTokenOrTokenizationKey: BackendService.clientToken ?? "", amt: 1, viewController: self)
 
     }
-    
     
    
 }

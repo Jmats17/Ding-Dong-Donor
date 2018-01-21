@@ -14,14 +14,11 @@ import SwiftQRCode
 struct CreateBarcodeService {
     
 
-    func createBarcode(imageUrl : URL, stringRef : String, completion: @escaping (UIImage?) -> Void) {
-        
-        KingfisherManager.shared.retrieveImage(with: imageUrl, options: nil, progressBlock: nil, completionHandler: { image, error, cacheType, imageURL in
+    func createBarcode(stringRef : String, completion: @escaping (UIImage?) -> Void) {
             guard let barcodeImage = QRCode.generateImage("\(stringRef)", avatarImage: nil)
                 else {
                 return completion(nil)}
             completion(barcodeImage)
-        })
     }
 
 }

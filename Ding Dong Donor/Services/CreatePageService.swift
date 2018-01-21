@@ -13,21 +13,31 @@ import FirebaseStorage
 struct CreatePageService {
     
     
-    static func create(for image: UIImage, name : String, creator : String, currentAmtRaised : Int) {
-        let imageRef = StorageReference.newPostImageReference()
-        StorageService.uploadImage(image, at: imageRef) { (downloadURL) in
-            guard let downloadURL = downloadURL else {
-                return
-            }
-            
-            let urlString = downloadURL.absoluteString
-            create(forURLString: urlString, name: name, creator: creator, currentAmtRaised: currentAmtRaised)
-        }
+//    static func create(for image: UIImage, name : String, creator : String, currentAmtRaised : Int) {
+//        let imageRef = StorageReference.newPostImageReference()
+//        StorageService.uploadImage(image, at: imageRef) { (downloadURL) in
+//            guard let downloadURL = downloadURL else {
+//                return
+//            }
+//
+//            let urlString = downloadURL.absoluteString
+//            create(forURLString: urlString, name: name, creator: creator, currentAmtRaised: currentAmtRaised)
+//        }
+//    }
+    
+    static func updateAmount(page : DonationPage,ref : String,currentAmtRaised : Int) {
+        let newAmt = Int(page.currentAmtRaised) + currentAmtRaised
+        let page = DonationPage(name: page.name, creator: page.creator, currentAmtRaised: newAmt)
+        let dict = page.dictValue
+        
+        let postRef = Database.database().reference().child("pages").child(ref)
+        
+        postRef.updateChildValues(dict)
     }
     
-    private static func create(forURLString urlString: String, name : String, creator : String, currentAmtRaised : Int) {
+     static func create(forName name : String, creator : String, currentAmtRaised : Int) {
         let user = Constants.DeviceUID.deviceID
-        let page = DonationPage(name: name, creator: creator, currentAmtRaised: currentAmtRaised, imageURL: urlString)
+        let page = DonationPage(name: name, creator: creator, currentAmtRaised: currentAmtRaised)
         let dict = page.dictValue
         
         let postRef = Database.database().reference().child("pages").child(user).childByAutoId()

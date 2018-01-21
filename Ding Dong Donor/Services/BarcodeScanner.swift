@@ -24,14 +24,13 @@ class Scanner : NSObject {
         scanner.dismissalDelegate = self
         viewController.present(scanner, animated: true, completion: nil)
     }
-    
+  
 }
 
 extension Scanner : BarcodeScannerCodeDelegate,BarcodeScannerErrorDelegate,BarcodeScannerDismissalDelegate {
     func barcodeScanner(_ controller: BarcodeScannerController, didCaptureCode code: String, type: String) {
         completionHandler?(code)
         controller.dismiss(animated: true, completion: nil)
-        
     }
     func barcodeScanner(_ controller: BarcodeScannerController, didReceiveError error: Error) {
         print(error)

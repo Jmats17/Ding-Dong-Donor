@@ -22,25 +22,26 @@ class DonationPageCreatorVC : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        photoService.completionHandler = { img in
-            self.barcodeImage.image = img
-            
-        }
+        nameLabel.delegate = self
+        creatorLabel.delegate = self
     }
     
-    @IBAction func addImage() {
-        photoService.presentImagePickerController(from: self)
-      
-    }
     
     @IBAction func createPage() {
         guard let name = nameLabel.text else { return}
         guard let creator = creatorLabel.text else {return}
-        guard let barcodePic = barcodeImage.image else {return}
-        CreatePageService.create(for: barcodePic, name: name, creator: creator, currentAmtRaised: 0)
+        CreatePageService.create(forName: name, creator: creator, currentAmtRaised: 0)
         
     }
 
     
     
+}
+
+extension DonationPageCreatorVC : UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
 }

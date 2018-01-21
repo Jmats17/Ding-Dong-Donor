@@ -28,12 +28,8 @@ class DonationPageVC : UIViewController {
                 self.page = page
                 self.nameLabel.text = page?.name
                 self.creatorLabel.text = page?.creator
-                let imageURL = URL(string: (page?.imageURL)!)
-//                KingfisherManager.shared.retrieveImage(with: imageURL!, options: nil, progressBlock: nil, completionHandler: { image, error, cacheType, imageURL in
-//                    guard let barcodeImage = QRCode.generateImage("\(pageRef)", avatarImage: image, avatarScale: 0.7) else {return}
-//                    self.barcodeImage.image = barcodeImage
-//                })
-                self.barcodeService.createBarcode(imageUrl: imageURL!, stringRef: userKeyRef){ (barcodeImg) in
+                print(Constants.PagePointer.page().child("pages").child("\(userKeyRef)"))
+                self.barcodeService.createBarcode(stringRef: userKeyRef){ (barcodeImg) in
                     
                     self.barcodeImage.image = barcodeImg
                 }
