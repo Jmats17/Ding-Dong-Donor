@@ -42,7 +42,8 @@ class PaymentOptionVC : UIViewController {
         
     }
     @IBAction func cardSelected(sender : Any) {
-        
+
+
     }
     @IBAction func bitcoinSelected(sender : Any) {
         

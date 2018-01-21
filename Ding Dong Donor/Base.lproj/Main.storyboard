@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5l7-o8-BJG">
+<<<<<<< HEAD
     <device id="retina5_9" orientation="portrait">
+=======
+    <device id="retina4_7" orientation="portrait">
+>>>>>>> 7d9188ce7181d5eedfb40ef9126f8a9751082553
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -334,6 +338,7 @@
             <point key="canvasLocation" x="388" y="850.49261083743841"/>
         </scene>
     </scenes>
+<<<<<<< HEAD
     <resources>
         <image name="CANNR" width="220" height="49"/>
         <image name="Group" width="221" height="219"/>
@@ -342,5 +347,9 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Boa-0U-6tO"/>
+=======
+    <inferredMetricsTieBreakers>
+        <segue reference="H0w-WP-DBB"/>
+>>>>>>> 7d9188ce7181d5eedfb40ef9126f8a9751082553
     </inferredMetricsTieBreakers>
 </document>
