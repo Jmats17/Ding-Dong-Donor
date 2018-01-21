@@ -11,7 +11,7 @@ import UIKit
 import FirebaseDatabase
 
 class PaymentOptionVC : UIViewController {
-    
+    private var merchantID = "merchant.com.justinmatsnev.Ding-Dong-Donor.cannr"
     @IBOutlet weak var nameLabel : UILabel!
     @IBOutlet weak var creatorLabel : UILabel!
     @IBOutlet weak var amtRaisedLabel : UILabel!
