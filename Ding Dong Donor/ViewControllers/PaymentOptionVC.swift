@@ -36,7 +36,7 @@ class PaymentOptionVC : UIViewController {
     
     @IBAction func scan(sender : Any) {
         barcodeScanner.presentBarcodeScanner(from: self)
-        
+        //
     }
 
     @IBAction func cardSelected(sender : Any) {

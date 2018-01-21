@@ -43,6 +43,9 @@ struct BackendService {
                 // Use the BTDropInResult properties to update your UI
                 result.paymentOptionType = .visa
                 result.paymentOptionType = .applePay
+                result.paymentOptionType = .coinbase
+                result.paymentOptionType = .venmo
+
                 BackendService.postNonceToServer(paymentMethodNonce: (result.paymentMethod?.nonce)!, amt: amt)
                 
             }
